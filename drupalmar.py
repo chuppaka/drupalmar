@@ -22,7 +22,7 @@ try:
     for LinkT in test:
         Link= dmn + LinkT
         try:
-            req = Request(Link, headers={'User-Agent': 'Mozilla/7.0'})
+            req = Request(Link, headers={'User-Agent': 'Mozilla/5.0'})
             try:
                 html = urlopen(req)
             except HTTPError as e:
